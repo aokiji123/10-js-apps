@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("../images/winter.avif");
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Poppins, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.section__text {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.days__number,
+.hours__number,
+.minutes__number,
+.seconds__number {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.days__text,
+.hours__text,
+.minutes__text,
+.seconds__text {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

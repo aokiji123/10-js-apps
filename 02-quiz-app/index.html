@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Math Quiz</title>
+</head>
+<body>
+    <div class="question__container" id="result">
+        <header class="question__header">
+            <h2 class="question__title" id="question">Question text</h2>
+            <hr>
+            <ul class="question__group">
+                <li class="question__list" tabindex="1">
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <label class="question__label" for="a" id="a_text">Question</label>
+                </li>
+                <li class="question__list" tabindex="0">
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <label class="question__label" for="b" id="b_text">Question</label>
+                </li>
+                <li class="question__list" tabindex="0">
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label class="question__label" for="c" id="c_text">Question</label>
+                </li>
+                <li class="question__list" tabindex="0">
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <label class="question__label" for="d" id="d_text">Question</label> 
+                </li>
+            </ul>
+        </header>
+        
+        <button class="question__button" id="submit" type="button">Submit</button>
+    </div>
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+</html>

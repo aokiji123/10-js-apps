@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #292d55;
+}
+
+.header {
+    padding: 1.5rem;
+    background-color: #484d88;
+    display: flex;
+    justify-content: center;
+
+    &__input {
+        padding: 0.7rem 1.8rem;
+        background-color: transparent;
+        border-radius: 50px;
+        font-family: inherit;
+        width: 250px;
+        max-width: 100%;
+        border: 2px solid #292d55;
+        color: #fff;
+
+        &::placeholder {
+            color: #999;
+        }
+
+        &:focus {
+            outline: 2px solid #292d55;
+        }
+
+        &:hover {
+            background-color: #424880;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: #484d88;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__info {
+        padding: 1rem;
+        align-items: center;
+        letter-spacing: 0.5px;
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            color: #e6e6e6;
+            margin: 0;
+            font-weight: 100;
+        }
+
+        span {
+            font-weight: bold;
+            border-radius: 3px;
+            padding: 0.25rem;
+            background-color: #292d55;
+
+            &.green {
+                color: #21c221;
+            }
+
+            &.orange {
+                color: #ffa600;
+            }
+
+            &.red {
+                color: #d61d1d;
+            }
+        }
+    }
+
+    &:hover {
+        & .overview {
+            transform: translateY(0)
+
+        }
+    }
+}
+
+.overview {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+
+    padding: 2rem;
+
+    h4 {
+        margin-top: 0;
+    }
+}
