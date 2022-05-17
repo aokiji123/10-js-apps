@@ -1,0 +1,1 @@
+- Link to the projects https://aokiji123.github.io/10-js-apps/
